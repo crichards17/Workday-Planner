@@ -41,14 +41,18 @@ function createBlocks() {
             class: "saveBtn col-1",
             'data-hour': i
         });
-        newSvBtn.text('🖫');
+        let newSvIcon = $('<i>');
+        newSvIcon.text('🖫');
+        newSvBtn.append(newSvIcon);
 
         let newClrBtn = $('<button>');
         newClrBtn.attr({
             class: "clearBtn col-1",
             'data-hour': i
         });
-        newClrBtn.text('␡');
+        let newClrIcon = $('<i>');
+        newClrIcon.text('ⓧ');
+        newClrBtn.append(newClrIcon);
         
         newRow.append(newHour);
         newRow.append(newText);
